@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Tailwind | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Preview Card - Tailwind Version</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#090b1a] font-['Inter'] min-h-screen flex items-center justify-center p-6">
 
-  Get insights that help your business grow.
+    <main class="max-w-[1110px] bg-[#1b1938] rounded-xl overflow-hidden flex flex-col-reverse lg:flex-row shadow-2xl">
+        
+        <div class="p-8 lg:p-16 lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-white text-3xl lg:text-4xl font-bold leading-tight">
+                Get <span class="text-[#aa5cdb]">insights</span> that help your business grow.
+            </h1>
+            <p class="text-white/60 mt-6 text-[15px] leading-relaxed">
+                Discover the benefits of data analytics and make better decisions 
+                regarding revenue, customer experience, and overall efficiency.
+            </p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+            <div class="mt-10 lg:mt-16 flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0">
+                <div>
+                    <p class="text-white text-2xl font-bold">10k+</p>
+                    <p class="text-white/60 text-xs uppercase tracking-widest font-['Lexend_Deca'] mt-1">companies</p>
+                </div>
+                <div>
+                    <p class="text-white text-2xl font-bold">314</p>
+                    <p class="text-white/60 text-xs uppercase tracking-widest font-['Lexend_Deca'] mt-1">templates</p>
+                </div>
+                <div>
+                    <p class="text-white text-2xl font-bold">12M+</p>
+                    <p class="text-white/60 text-xs uppercase tracking-widest font-['Lexend_Deca'] mt-1">queries</p>
+                </div>
+            </div>
+        </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        <div class="lg:w-1/2 bg-[#aa5cdb] relative">
+            <picture>
+                <source srcset="images/image-header-desktop.jpg" media="(min-width: 1024px)">
+                <img src="images/image-header-mobile.jpg" alt="Header" 
+                     class="w-full h-full object-cover mix-blend-multiply opacity-75">
+            </picture>
+        </div>
 
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </main>
+
 </body>
 </html>
